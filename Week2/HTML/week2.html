@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Space</title>
+</head>
+<body>
+    <p>Hi there! <strong>My name is Ching Keziah</strong></p>
+    <!--Paragraph is a block level element since it starts on a new line-->
+    <!--strong is an inline element. that is, theses are elements that do not start on a new line-->
+    <img src="git prof.jpg", width="20%", height="
+    30%">
+    <br>
+    <p>This is an image</p>
+    <img src="./Images/jordy.jpg", width="20%", height="20%">
+    <!--used a path-->
+    <h3>Lists In HTML</h3>
+    <!--start is an attriburte which indicates from what value the browser should begin numbering the list items
+    while type indicates the numbering type, it could be roman numerals, digits, uppercase or lowercase-->
+    <ol start="6" type="I"> Ordered Lists
+        <li>food</li>
+        <li>good</li>
+    </ol>
+
+    <ul>Unordered List
+        <li>kitchen</li>
+        <li>cup</li>
+    </ul>
+        <!--This is a table-->
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Track</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Keziah</td>
+               <td>FrontEnd</td>
+               <td>Cameroon</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>total</td>
+        </tfoot>
+    </table>
+    <!--Using get for the public to see the information displayed or written in the form-->
+<form action="process.php", method="GET">
+    <label>First Name</label>
+    <input text="text" name="FirstName" placeholder="Enter your first name">
+    <!--This is a line break-->
+    <br>
+    <br>
+    <br>
+
+    <label>Last Name</label>
+    <input text="text" name="LastName" placeholder="enter your last name">
+
+    <select name="gender">
+        <option value="male">Male</option>
+        <option Value="Female">Female</option>
+    </select>
+<p>
+    <input type="radio" name="gender" value="Male">
+    <label>Male</label>
+    <input type="radio" name="gender" value="Female">
+    <label>Female</label>
+    <input type="radio" name="gender" value="Other">
+    <label>Other</label>
+
+</p>
+    <p>
+        <!--Post is used for privacy, so when you submit all what is written doesnt appear on the link-->
+    <form action="process.php", method="post">
+        <label>Age</label>
+        <input type="number" name="Age" value="20">
+        <br>
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+        <br>
+        <label>Message</label>
+        <textarea type="textarea" name="Message" placeholder="Enter your Message">Enter Your Message</textarea>
+    </p>
+<br>
+<label>Email</label>
+<input type="Email" name="email">
+</form>
+</body>
+</html>
