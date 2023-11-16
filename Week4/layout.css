@@ -1,0 +1,9 @@
+.box{
+    display: inline;
+}
+.container{
+    display: block;
+}
+.stephanie{
+    display: flex;
+}

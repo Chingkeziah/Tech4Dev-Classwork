@@ -1,0 +1,12 @@
+/*strong is a child inside of paragraph*/
+p strong{
+    color: blue;
+}
+div {
+    background-color: yellow;
+    color: gray;
+}
+div + P {
+    padding: 1px solid red;
+    border: 2px solid blue;
+}

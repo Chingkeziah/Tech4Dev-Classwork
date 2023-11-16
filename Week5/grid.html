@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*grid layout style*/
+        .container {
+            display: grid;
+            /* repeat aids in adding columns without having to manually imput them as 1 1 1 1.... up to 12 */
+            /* 1fr stands for 1 fraction */
+            grid-template-columns: repeat(12, 1fr);
+            /* gap represents the space between the columns */
+            gap: 2px;
+        }
+        /* the border and height here creates a box around the element with a specific height */
+         .container div {
+            border: 1px solid black;
+            height: 60px;
+         }
+         /* first child is a child selector used to select the first child when there are 
+         many children to a parent element which does have a class or id*/
+        .container :first-child{
+            grid-row: 1/3;
+            grid-column: 1/4;
+            border: 1px solid red;
+            height: 120px;
+         }
+         /*Float layout style*/
+         img {
+            float: left;
+            margin-right: 10px;
+            border: 2px solid black;
+         }
+         section {
+            display: flow-root;
+         }
+         p + p {
+            margin-top: 1px;
+         }
+         /*multi column layout*/
+         /* it is used when you have a very long list of items*/
+         .layout{
+            column-count: 4;
+            column-gap: 3px;
+         }
+    </style>
+</head>
+<body>
+    <h1>This is a grid layout system</h1>
+    <div class="container">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+        <div>four</div>
+        <div>five</div>
+        <div>six</div>
+        <div>seven</div>
+        <div>eight</div>
+        <div>nine</div>
+        <div>ten</div>
+        <div>eleven</div>
+        <div>twelve</div>
+    </div>
+
+    <h1>Float Layout</h1>
+    <section>
+        <img src="./../Week2/HTML/git prof.jpg", width="150px", height="150px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, magnam. Adipisci, ab quibusdam quos corrupti eos mollitia, sunt voluptate assumenda harum ratione magni ipsam repellendus odit. Maxime id voluptate excepturi.
+        Sit natus obcaecati sunt, ipsam fugit, nulla id impedit libero recusandae quia voluptatem, modi mollitia officia cum iste non! Sed perspiciatis maiores officia debitis repellendus maxime tlore sapiente numquam ipsa. Saepe, est perferendis!
+        Repellendus modi iste quam, impedit voluptate dignissimos, similique quasi totam debitis dolorum at, quibusdam aut deserunt excepturi commodi placeat? Ducimus minus dolore adipisci quia? Aliquid voluptate deserunt eum a culpa.
+        Ipsam a distinctio earum? Laudantium asperiores quia debitis odio recusandae doloribus veritatis iure excepturi libero blanditiis voluptate, sed ipsum ad maiores aliquam possimus quis ducimus! Sit voluptas nostrum repudiandae blanditiis.
+        Tempore eius modi, perferendis dolor, libero totam saepe reprehenderit aut similique odit doloremque, laboriosam optio ad quaerat nemo? Ducimus temporibus culpa totam facere ullam? Assumenda aliquam molestiae dolores cupiditate adipisci.
+        Impedit reprehenderit aperiam, facilis illum nesciunt deleniti obcaecati incidunt aliquam error pariatur alias eius quibusdam quotationem debitis expedita!</p>
+    </section>
+    <h1>Multi Column Layout</h1>
+    <h3>Fruits</h3>
+    <ul class="layout">
+        <li>Paw paw</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Soursop</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+        <li>Pneaple</li>
+        <li>Guava</li>
+        <li>Orange</li>
+        <li>Fruit</li>
+        <li>Watermelon</li>
+    </ul>
+</body>
+
+</html>

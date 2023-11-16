@@ -1,0 +1,51 @@
+/*External styling*/
+body{
+    background-color: pink;
+    
+}
+section {
+    font-size: 30px;
+}
+/* UNDERSTANDING CSS SIZES
+- em stands for element and it works on the parent element, that is, the element 
+rapping what you want to style
+- rem stands for the root element, that is, that element that carries all the tags 
+- point pt 1pt = 1/72 of an inch
+- pixel px 1px = 1/96 of an inch
+- percentage according to your screen, after looking at the surrounding sizes like that of the parent 
+element it can take the percentage of that size. say you use 10% it'll display 
+10%of the size of the parentelement
+- number runs from 100 - 900
+- pc stands for picas and 1pc is 1/6 of an inch */
+
+/*class selector*/
+.lorem{
+    color:blue;
+}
+
+/* Id selector*/
+#example{
+    color: purple ;
+}
+/*Universal selector*/
+* {
+    box-sizing: border-box;
+}
+#me {
+    color:brown !important;
+}
+/*element selector*/
+h1 {
+    font-size: 20px;
+}
+p{
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+}
+/*attribute selector*/
+[draggable="false"]{
+    color: white;
+}

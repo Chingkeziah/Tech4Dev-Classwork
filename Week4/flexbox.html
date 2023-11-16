@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /*flex brings all the elements on the same line */
+        .container{
+            display: flex;
+            /* used flex wrap to prevent overflow */
+            flex-wrap: wrap;
+            /*
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: red;
+            padding: 5px;*/
+        }
+
+        .item-left{
+            flex: 45%;
+            background-color: red;
+            padding: 1px;
+            border: 1px solid green;
+            margin: 1px;
+        }
+        .item-right{
+            flex: 45%;
+            background-color: black;
+            color: white;
+            padding: 1px;
+            border: 1px solid green;
+            margin: 1px;
+        }
+        @media (max-width: 600px) {
+            .item-left, .item-right{
+                flex: 100%;
+            }
+        }
+ </style>
+</head>
+<body>
+    <h1>Flexbox and Grid</h1>
+    <p>flexbox and grid is a layout system that creates rules
+     for multiple elements</p>
+    <h3>Flexbox</h3>
+    <div class="container">
+        <div class="item-left">
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="item-right">
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </div>
+    </body>
+</html>
