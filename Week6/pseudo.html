@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* p:first-of-type::first-letter {
+        font-size: 3.5em;
+        color: hotpink;
+        font-weight: 500;
+        margin-inline-end: 0.1em;
+    } */
+    p::first-line {
+        color: white;
+        background-color: black;
+    }
+    dialog::backdrop {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis sint 
+            dolores ullam illum ipsa, et hi
+            c modi omnis veniam excepturi accusantium tempora laborum accusamus 
+            ducimus ex? Asperiores, sint corrupti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos expedit
+            a eum deleniti adipisci numquam! Doloremque cumque commod
+            i consequatur, tenetur officiis numquam quibusdam unde! Deleniti harum corrupti 
+            voluptate. Aperiam, quia.
+        </p>
+    </div>
+    <dialog id="modal">This is a dialog element</dialog>
+    <script src="dialog.js"></script>
+</body>
+</html>

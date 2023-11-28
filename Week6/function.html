@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in css</title>
+    <style>
+        /* .post :is(h1,h2,h3) {
+            background: darkblue;
+            color: yellow;
+            line-height: 1.2;
+        } */
+
+        :root {
+            --base-color: #f0f;
+        }
+        /* called with a variable */
+        .post {
+            background: var(--base-color);
+        }
+        .wrapper {
+            background: var(--prmary-color, hotpink);
+        }
+    </style>
+</head>
+<body>
+    <h1>Functions in css</h1>
+    <h2>Functions in css</h2>
+    <h3>Functions in css</h3>
+
+    <article class="wrapper">
+        <h1>Functions in css</h1>
+        <h2>Functions in css</h2>
+        <h3>Functions in css</h3>
+    </article>
+
+    <!-- <script>
+        function sqrMtr(width, height){
+            return width * height
+        }
+        console.log(sqrMtr(7,9));
+        // calculates 7 x 9
+    </script> -->
+</body>
+</html>

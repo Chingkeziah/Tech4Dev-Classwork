@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Alignment</title>
+    <style>
+
+        .container {
+            display: flex;
+            border: 5px solid red;
+            flex-direction: row;
+        }
+        .container div {
+            border: 2px solid blue;
+            gap: 2;            
+            /* flex: 1; */
+    
+        }
+        div:nth-child(3) {
+            align-self: center;
+        }
+        div:nth-child(4) {
+         flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Box one Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum rem laborum inventore doloribus omnis ducimus nobis consequatur quaerat. Ratione quibusdam suscipit distinctio tempore, aliquid molestiae hic aspernatur quas! Voluptas, modi.Lorem ipsum dolor sit amet consectetur adipisicing elit. A consectetur error labore ipsam odio impedit, sint ex quis harum voluptates minus </div>
+        <div>Box two</div>
+        <div>Box three </div>
+        <div>Box four Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit omnis possimus odio libero! Totam, doloremque rem reprehenderit ex debitis </div>
+    </div>
+</body>
+</html>

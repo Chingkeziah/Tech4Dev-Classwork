@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Continuation </title>
+    <style>
+        #recipe:target {
+            outline: 2px dashed red;
+
+        }
+        /* #recipe:target ~ * {
+            background-color: aqua;
+            
+        } */
+        a:link {
+            color: palevioletred;
+        }
+        a:visited {
+            color: greenyellow;
+        }
+        button:disabled {
+            background-color: grey;
+            border-color: grey;
+            cursor: not-allowed;
+        }
+        button:enabled {
+            border: 3px solid gold;
+        }
+        :checked {
+            box-shadow: 0 0 5px 2px gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>:target Pseudo Class Selector</h1>
+    <p>
+        <a href="#recipe" class="btn">Go to Recipe</a>
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt facere aspernatur vero nisi suscipit tenetur 
+        exercitationem aliquam, reiciendis, excepturi repellendus provident? Nulla quae ab cum quis quidem, exercitationem enim!
+        Excepturi sed obcaecati iure deserunt consequatur rerum, laudantium doloribus dolore ducimus consequuntur a
+        utem molestiae tenetur praesentium neque architecto in ipsum alias reprehenderit. Nulla nisi tempora quidem voluptatibus debitis tempore quas.
+        Tenetur quibusdam quia sequi numquam voluptate a atque cupiditate eveniet labore optio repellat nobis reprehenderit sit magnam quasi maiores
+        dignissimos deleniti excepturi, necessitatibus, ipsum eligendi vel in officia. Fugiat, sapiente.
+        Aspernatur labore eveniet pariatur velit iste omnis distinctio nisi nulla itaque, ullam animi, minus consectetur facilis quia ipsam optio, aliquid dolor laboriosam veniam molestiae nam id. Id itaque nisi praesentium!
+        At quisquam porro, ratione aliquid sunt odio nemo facilis iste odit fugiat itaque provident doloribus mollitia, laborum quas, consequatur ipsa ipsam illum modi eveniet magnam beatae molestiae molestias reprehenderit. Ducimus.
+    
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt facere aspernatur vero nisi suscipit tenetur 
+        exercitationem aliquam, reiciendis, excepturi repellendus provident? Nulla quae ab cum quis quidem, exercitationem enim!
+        Excepturi sed obcaecati iure deserunt consequatur rerum, laudantium doloribus dolore ducimus consequuntur a
+        utem molestiae tenetur praesentium neque architecto in ipsum alias reprehenderit. Nulla nisi tempora quidem voluptatibus debitis tempore quas.
+        Tenetur quibusdam quia sequi numquam voluptate a atque cupiditate eveniet labore optio repellat nobis reprehenderit sit magnam quasi maiores
+        dignissimos deleniti excepturi, necessitatibus, ipsum eligendi vel in officia. Fugiat, sapiente.
+        Aspernatur labore eveniet pariatur velit iste omnis distinctio nisi nulla itaque, ullam animi, minus consectetur facilis quia ipsam optio, aliquid dolor laboriosam veniam molestiae nam id. Id itaque nisi praesentium!
+        At quisquam porro, ratione aliquid sunt odio nemo facilis iste odit fug
+    
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt facere aspernatur vero nisi suscipit tenetur 
+        exercitationem aliquam, reiciendis, excepturi repellendus provident? Nulla quae ab cum quis quidem, exercitationem enim!
+        Excepturi sed obcaecati iure deserunt consequatur rerum, laudantium doloribus dolore ducimus consequuntur a
+        utem molestiae tenetur praesentium neque architecto in ipsum alias reprehenderit. Nulla nisi tempora quidem voluptatibus debitis tempore quas.
+        Tenetur quibusdam quia sequi numquam voluptate a atque cupiditate eveniet labore optio repellat nobis reprehenderit sit magnam quasi maiores
+        dignissimos deleniti excepturi, necessitatibus, ipsum eligendi vel in officia. Fugiat, sapiente.
+        Aspernatur labore eveniet pariatur velit iste omnis distinctio nisi nulla itaque, ullam animi, minus consectetur facilis quia ipsam optio, aliquid dolor laboriosam veniam molestiae nam id. Id itaque nisi praesentium!
+        At quisquam 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt facere aspernatur vero nisi suscipit tenetur 
+        exercitationem aliquam, reiciendis, excepturi repellendus provident? Nulla quae ab cum quis quidem, exercitationem enim!
+        Excepturi sed obcaecati iure deserunt consequatur rerum, laudantium doloribus dolore ducimus consequuntur a
+        utem molestiae tenetur praesentium neque architecto in ipsum alias reprehenderit. Nulla nisi tempora quidem voluptatibus debitis tempore quas.
+        Tenetur quibusdam quia sequi numquam voluptate a atque cupiditate eveniet labore optio repellat nobis reprehenderit sit magnam quasi maiores
+        dignissimos deleniti excepturi, necessitatibus, ipsum eligendi vel in officia. Fugiat, sapiente.
+        Aspernatur labore eveniet pariatur velit iste omnis distinctio nisi nulla itaque, ullam animi, minus consectetur facilis quia ipsam optio, aliquid dolor laboriosam veniam molestiae nam id. Id itaque nisi praesentium!
+        At quisquam porro, ratione aliquid sunt odio nemo facilis iste odit fug
+    
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt facere aspernatur vero nisi suscipit tenetur 
+        exercitationem aliquam, reiciendis, excepturi repellendus provident? Nulla quae ab cum quis quidem, exercitationem enim!
+        Excepturi sed obcaecati iure deserunt consequatur rerum, laudantium doloribus dolore ducimus consequuntur a
+        utem molestiae tenetur praesentium neque architecto in ipsum alias reprehenderit. Nulla nisi tempora quidem voluptatibus debitis tempore quas.
+        Tenetur quibusdam quia sequi numquam voluptate a atque cupiditate eveniet labore optio repellat nobis reprehenderit sit magnam quasi maiores
+        dignissimos deleniti excepturi, necessitatibus, ipsum eligendi vel in officia. Fugiat, sapiente.
+        Aspernatur labore eveniet pariatur velit iste omnis distinctio nisi nulla itaque, ullam animi, minus consectetur facilis quia ipsam optio, aliquid dolor laboriosam veniam molestiae nam id. Id itaque nisi praesentium!
+        At quisquam 
+    </p>
+    <h3 id="recipe">Here is the Recipe</h3>
+    <p>Corn fufu & Vegetables</p>
+    <p>Fried Rice</p>
+    <p>White Beans</p>
+    <p>Ndole & plantain</p>
+
+
+    <h3>:link & :visited</h3>
+    <ul>
+        <li><a href="https://kezyadvice.blogspot.com/2020/05/let-it-go.html" target="_blank">My Advice Blog</a></li>
+        <li><a href="https://medium.com/@chingkeziah" target="_blank">My Tech Blog</a></li>
+        <li><a href="!#" target="_blank" rel="noopener noreferrer">No URL</a></li>
+    </ul>
+
+    <h2>Form State</h2>
+    <h4>:disabled and :enabled</h4>
+
+    <div>
+        <button disabled>Click Me</button>
+        <button>Keziah</button>
+    </div>
+
+    <h1>:checked</h1>
+    <label>
+        <input type="checkbox" name="male" id="male">
+        Check me
+    </label>
+    <label>
+        <input type="checkbox" name="male" id="male">
+        Check me again
+    </label>
+</body>
+</html>

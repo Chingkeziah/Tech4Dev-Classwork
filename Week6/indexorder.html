@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Order Of Elements</title>
+    <style>
+        /* p:first-child {
+            background-color: darkcyan;
+            font-weight: bold;
+        }
+        p:last-child {
+            background-color: brown;
+        } */
+        /* p:nth-child(odd) {
+            color: black;
+            background-color: aqua;
+        }
+        p:nth-child(2n+2) {
+            color: hotpink;
+            background-color: black;
+        }
+        li:only-child {
+            background-color: lightsalmon;
+        }
+        h2:first-of-type {
+            border: 1px solid black;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 5px;
+            margin: 2px;
+        }
+        h2:last-of-type {
+            border:3px solid red;
+            text-align: center;
+            text-transform: capitalize;
+            padding: 5px;
+            margin: 2px;
+        } */
+        h4:only-of-type {
+            color: red;
+            background-color: goldenrod;
+            border: 1px solid white;
+            padding: 1px;
+            margin: 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hi there!</p>
+        <h4>Greeting everyone</h4>
+    </div>
+    <h4>I hate keeping late nights but i have work to complete</h4>
+    <h4>I drink a lot of water to keep me awake and hydrated</h4>
+    <h1>Selecting Elements by Index</h1>
+    <ul>
+        <li>:first-child</li>
+        <li>:last-child</li>
+        <li>:only-child</li>
+    </ul>
+        <div>
+            <p>This is the first paragraph</p>
+            <p>This is the second paragraph</p>
+            <p>This is the third paragraph</p>
+            <p>This is the fourth paragraph</p>
+            <p>This is the first paragraph</p>
+            <p>This is the second paragraph</p>
+            <p>This is the third paragraph</p>
+            <p>This is the fourth paragraph</p>
+            <p>This is the first paragraph</p>
+            <p>This is the second paragraph</p>
+            <p>This is the third paragraph</p>
+            <p>This is the fourth paragraph</p>
+        </div>
+        <section>
+            <P>First paragraph without a parent</P>
+        </section>
+        <ul>
+            <li> This is an only child</li>
+        </ul>
+        <ul>
+            <li>:only-child</li>
+            <li>:first-of-type</li>
+            <li>:last-of-type</li>
+            <li>:nth-child</li>
+            <li>:only-of-type</li>
+        </ul>
+        
+        <div>
+            <h2>Selecting Elements by their Occurrence</h2>
+            <h2>Selecting Elements by their Index</h2>
+            <h2>Selecting Elements by their Order</h2> 
+            <h2>Other Pseudo Classes</h2>
+        </div>
+</body>
+</html>

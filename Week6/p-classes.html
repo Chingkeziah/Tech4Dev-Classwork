@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:invalid{
+            border-color: red;
+        }
+        input:valid {
+            border-color: green;
+        }
+        .info {
+            font-size: 0.7em;
+            font-style: italic;
+            margin-block-start: 0.5em;
+        }
+        input {
+            width: 200px;
+            padding: 0.5rem 1rem;
+            font: inherit;
+            border: 1px solid black;
+            border-radius: 0.5rem;
+        }
+        a:hover {
+            color: white;
+            background: black;
+            text-decoration: none;
+        }
+        .btn:active {
+            transform: scale(0.99);
+            box-shadow: none;
+        }
+        /* :focus{
+            outline: none;
+        } */
+        .button:focus {
+            outline: 2px dotted blue;
+            outline-offset: 2px;
+            background-color: rgb(30, 128, 214);
+        }
+        
+
+        .helper :focus {
+            display: none;
+        }
+        :focus-within .helper{
+            display: block;
+        }
+        .steph:focus {
+            outline: 2px dashed tomato;
+            outline-offset: 2px;
+            background-color: black;
+        }
+        .helper {
+            font-weight: bold;
+            padding: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <form action="#">
+        <label for="email">Email Adress</label>
+        <input name="email" id="email" required placeholder="Enter a valid email"
+        aria-describedby="emailinfo">
+        <p class="info" id="emailinfo">Add a valid email here</p>
+    </form>
+
+    <!-- <h3>:hover Pseudo Class</h3>
+    <P>This is a link: <a href="!#">Hover over me</a></P>
+
+    <h3>:active Pseudo Class</h3>
+    <button class="btn">Click or click and hold to see wonder</button> -->
+
+    <h3>:focus :focus-within :focus-visible</h3>
+    <button class="button">Use your tab key to focus this button</button>
+    <hr>
+    <div>
+        <button class="steph">Use your tab to focus here again!</button>
+
+        <div class="helper">Click this button for a surprise</div>
+    </div>
+
+    <script>
+        document.querySelector('button').addEventListener
+        ('click', ()=> alert('i am not stephanie, i am just an html element'));
+    </script>
+
+</body>
+</html>

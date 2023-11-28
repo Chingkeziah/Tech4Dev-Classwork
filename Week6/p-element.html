@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Pseudo Elements */
+        /* marker, before, after, selection */
+        /* bullet poins and numbering should get a marker of red */
+        ::marker {
+            color: hotpink;
+        }
+        /* size of the points or numbers of the ol and ul */
+       ol ::marker {
+         font-size: 1.5em;
+       }
+       ul ::marker {
+        font-size: 1.5em;
+       }
+      /* changing the default summmary 
+      sign from a play/upside down play to a + and - sign depending on if it's open or not */
+       summary::marker {
+        /* added a space with two apostrophe signs after ('\002b'' ') to ensure that there's space
+        immediately after the + sign which puts a space between it and the text*/
+        content: '\002B'' ';
+       }
+       details[open] summary::marker{
+        content: '\2212';
+       }
+       div::before {
+        content: "i am before";
+       }
+       div::after {
+        content: "i am after";
+       }
+       .diff {
+        color: red;
+       }
+       ::selection {
+        background: coral;
+        color: white;
+       }
+       .section::after {
+        content: "I really hate olives";
+       }
+       .hats::before {
+        content: "i really love putting on hats";
+       }
+
+    p:nth-of-type(1)::selection {
+        background: darkblue;
+        color: yellow;
+    }
+    input::placeholder {
+        color: darkcyan;
+        font-size: -1rem;
+        font-family: monospace;
+    }
+    </style>
+</head>
+<body>
+    <h1>Marker</h1>
+    <ol>
+        <li>Big</li>
+        <li>Bang</li>
+        <li>Theory</li>
+    </ol>
+    <ul>
+        <li>Butter</li>
+        <li>Bread</li>
+        <li>Meat</li>
+    </ul>
+    <details>
+        <summary>open for more content</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati eum, nisi aspernatur 
+            numquam odit? Quis incidunt dolor in officia a quibusdam voluptates temporibus, sapiente aut n
+            ulla corporis nesciunt saepe dolorum vel unde eos eius nemo, consequuntur voluptatibus minima,
+            cupiditate voluptas! Distinctio iusto incidunt sed sint! Nihil asperiores assumenda id maxime perfe
+            rendis! Dolores alias nesciunt at tenetur sunt facere nisi dolor! Molestiae quod sint ratione velit
+            error voluptates consectetur sapiente repellendus nihil in ullam ipsam numquam sequi, nemo est asp
+             ernatur explicab</p>
+    </details>
+
+    <h2>::Before & ::After Pseudo Element</h2>
+    <div class="diff">
+        I am before
+    </div>
+
+    <h2>::Selection Pseudo Element</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias harum commodi, quasi enim
+        ipsam dolore temporibus, ulla corporis nesciunt saepe dolorum vel unde eos eius 
+        cupiditate voluptas! Distinctio iusto incidunt sed sint! Nihil asperiores assumend
+        a id maxime perfenemo, consequuntur voluptatibus minima,rendis
+        mollitia dolorum quae voluptatum consequuntur hic voluptates sapiente eos sed tempore, o
+        fficia vero quis.</p>
+        
+
+        <h2>::Placeholder</h2>
+        <label for="email">Email address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <!-- <h3>Read about ::cue pseudo element</h3>
+
+        <h1>Trying out the ::before & ::after pseudo element selectors</h1>
+        <section class="section">big bang</section>
+        <section class="hats">theory</section> -->
+</body>
+</html>

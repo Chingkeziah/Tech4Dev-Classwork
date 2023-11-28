@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes In CSS</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* gap: 1.5rem;
+            max-width: 500px; */
+        }
+        .circle {
+            clip-path: circle(50%);
+        }
+        .kezy {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Shapes in css</h1>
+    <div class="container">
+        <div class="circle">
+            <img src="./../Week2/Images/cake.png" alt="cake">
+        </div>
+        <div class="kezy">
+            <img src="./../Week2/Images/cake.png" alt="cake">
+        </div>
+    </div>
+</body>
+</html>

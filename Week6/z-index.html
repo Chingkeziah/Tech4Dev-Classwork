@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index & stacking content</title>
+    <style>
+        .box {
+            background: rgb(10, 65, 159);
+            /* z-index: 0;
+            position: relative; */
+        }
+        .box .child {
+            position: relative;
+            z-index: -1;
+            background: pink;
+            border: 1px solid hotpink;
+            padding: 1rem;
+            width: 275px;
+
+        }
+        .child {
+            font-weight: 900;
+        }
+        /* stacking content */
+        .top, .bottom {
+            width: 250px;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .inner {
+            padding: 20px;
+            background: wheat;
+            border: 2px solid gold;
+
+        }
+        .top {
+            z-index: 1;
+            background: green;
+            border: 2px solid springgreen;
+        }
+        .bottom {
+            z-index: 2;
+            margin-top: -90px;
+            opacity: 0.8;
+            box-shadow: 0 -1px 10px rgba(0 ,0 , 0 / 60%);
+            background: coral;
+            border: 2 
+            2px solid brown;
+        }
+        .top > .inner {
+            z-index: 999;
+        }
+        .bottom > .inner {
+            z-index: 2 ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Negative Z-Index</h1>
+    <div class="box">
+        <div class="child">
+            I will answer a million times
+        </div>
+    </div>
+
+    <h2>Stacking Content</h2>
+
+    <div class="grandparent">
+        <div class="top">
+            <code>z-index of 1</code>
+            <div class="inner">
+                <code>z-index of 999</code>
+            </div>
+        <div class="bottom">
+            <code> z-index of code 2</code>
+            <div class="inner">
+                <code>z-index of code 2</code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
