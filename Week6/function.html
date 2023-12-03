@@ -13,6 +13,7 @@
 
         :root {
             --base-color: #f0f;
+            --primary-color: hotpink;
         }
         /* called with a variable */
         .post {
@@ -21,13 +22,24 @@
         .wrapper {
             background: var(--prmary-color, hotpink);
         }
+        /* using this below didn't work because .wrapper is the one with the primary color and for 
+        the entire page to have a primary color so you can call it on its own, you need to add --primary 
+        color to :root and only then would my commented styling below work
+        .me {
+            background: var(--primary-color);
+        } */
     </style>
 </head>
 <body>
     <h1>Functions in css</h1>
     <h2>Functions in css</h2>
     <h3>Functions in css</h3>
-
+    <div class="post">
+        <p>I'm loving functions already</p>
+    </div>
+    <div class="me">
+        i love myself
+    </div>
     <article class="wrapper">
         <h1>Functions in css</h1>
         <h2>Functions in css</h2>
