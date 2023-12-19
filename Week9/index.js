@@ -1,10 +1,16 @@
 /* javascript is one of the most popular and widely used programing and scripting language in the world right now
-it is commonly used to create interactive effects within web browsers. it was originally designed
-to run only on browser. however, in 2009, Ryan Doll took the open source javascript engine in chrome and 
-imbedded it inside a c++ program called node. with the help of node, we can now run javascript code outside of 
+it is commonly used to create interactive effects within web browsers. JavaScript was designed by Brendan Eich of Netscape initially 
+though others have also contributed to the ECMA script standard. JavaScript was originally designed
+to run only on browsers. However, in 2009, Ryan Doll took the open source javascript engine in chrome and 
+imbedded it inside a c++ program called node and with the help of node, we can now run javascript code outside of 
 a browser.
+ECMA stands for European Computer Manufactureres Association
 Ecmascript is a specification which defines standards for scripting languages while javascript is a programing 
 language which confirms to this specification
+Generally, there is this confusion between JavaScript with Java. These are two completely unrelated languages. The main difference
+between the two is that one is a compiled language and the other is an interpreted language. Javascript is an 
+interpreted language while Java is a compiled language. In programing, languages are either compiled or interpreted.
+
 */
 
 console.log('hello world');
