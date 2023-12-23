@@ -45,12 +45,13 @@ console.log(interestRate);
 
 // data types i.e primitive and reference types
 // primitive types
-// string, number, boolean, undefined, null
+// string, number, boolean, undefined, null, symbols
 let middleName = 'nyoh'; //string literal
 let age = 20; //number literal
 let isApproved = true; //boolean literal
-let lastName; //undefined
-let selectedColor = null; //used in situations where you want to clear the value of a variable
+let lastName; //undefined has no value
+let selectedColor = null; //null is basically 0
+
 
 // reference types
 // object, arrays, functions
@@ -73,24 +74,3 @@ console.log(selectedColors);
 // you can expand the array by using the syntax below
 // selectedColors[2] = 'green';
 
-// functions
-// a function is a set of statements which performs a task or calculates a value
-function greet(name) { //name is a parameter
-   console.log('hello ' + name);
-}
-greet('John'); //indicates a statement while john is an arguement
-
-// types of functions
-// performing a task is what has been used above
-
-// calculating a value
-// use ctrl l to clear your console
-
-function square(number) {
-   return number + number;
-
-}
-// let number = square(2);
-// console.log(number);
-// make this shorter by using 
-console.log(square(2));
