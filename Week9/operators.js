@@ -6,12 +6,35 @@
 // 10 and 4 are operands while + is an operator
 
 // lists of operators
+// Arithmetic operators
+// comparison operators
+// Logical operators
+// assignment operators
 
 // Arithmetic operators
 // here are multiple arithmetic operators these are;
 // addition
 let sum = 7 + 9
 console.log(sum);
+
+// + can also be used for concatenation or type coercion
+2 + 2 //= 2;
+2 + '2' //= "22";
+/*It is important to note that, in JavaScript, there are rules to  type coercion. These are;
+If either operand is a string, the other will be converted to a string.
+If either operand is a number, the other operand is converted to a number. Reading this actually doesn't make sense given our previous rule right??? Let me explain 
+
+b = 1;
+typeof(b);
+b == true;
+typeof(true);
+typeof(b);
+image
+If either operand is a boolean, the other would be converted to a number.
+
+true = 1;
+false = 0;
+If either operand is null or undefined, one must be converted to the other to return a boolean value.?*/
 
 // substraction
 let y = 5 - 7
@@ -49,37 +72,6 @@ v /= 3;
 v %= 3;
 // exponentiation assignment
 v **= 3;
- 
-// Increment and decrement operators
-// The increment and decrement operators are used to increase or decrease the value of a variable by 1
-// The increment operator is ++
-// The decrement operator is --
-// Both operators can be used in two ways which is prefix and postfix
-// Prefix increment and decrement operator
-
-// prefix increment
-let b = 10;
-console.log(++b);
-console.log(b);
-// here the value of b is incremented by one
-// the new value of b is printed
-// you'll see that the operator is displayed before the value
-
-// prefix decrement
-console.log(--b);
-console.log(b);
-
-// Postfix increment and decrement operator
-// postfix increment operator
-/* here the operator is added after the variable and the value of the variable is  used before 
-it is incremented. That is, the current value of a is printed before it's new value*/
-let a = 10;
-console.log(a++);
-console.log(a);
-
-// postfix decrement operator
-console.log(a--);
-console.log(a);
 
 // comparison operators
 // these operators compare two values and return a boolean vaue of either true or false
@@ -105,6 +97,10 @@ console.log(z>=c);
 // === (strict equality checks) (checks the data type too)
 // !== (strict inequality (!==) (flipped value strict inequality check)
 
+// logical operators
+// && AND
+// || OR
+// ! NOT
 
 
 
@@ -115,7 +111,5 @@ console.log(z>=c);
 
 
 
-// + or concatenation
-2 + 2 
-2 + '2'
+
 
