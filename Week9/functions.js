@@ -20,7 +20,17 @@ function greet(name) { //name is a parameter
  // make this shorter by using 
  console.log(square(2));
  
- 
- 
- 
- 
+// creating a new function that sums 
+ function sum (x, y){
+   return x + y;
+ }
+ var sumOfTwoNumber = sum(10, 30);
+ console.log("the sum of 10 and 30 is " + sumOfTwoNumber);
+
+//  anytime i want to sum two variables i can just call the function and pass in parameters
+ sum(40, 20);
+ function multiply (a, b, c) {
+   return a * b * c;
+ }
+ var multiplicationOfTwoNumbers = multiply(2, 3, 4);
+ console.log("multiplying 3 numbers will give " + multiplicationOfTwoNumbers);
