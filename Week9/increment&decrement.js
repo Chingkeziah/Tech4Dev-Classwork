@@ -27,3 +27,25 @@ console.log(a);
 // let a = 10;
 console.log(a--);
 console.log(a);
+
+
+// basic increment and decrement calculation
+var x = 5;
+x = x + 5;
+x++
+// returns 10
+x++
+// returns 11 
+// ++ and -- first of all return the value before performing the action when you input it again
+x += 1
+12
+x -= 1
+11
+//however, += and -= perform the action immediately
+// for example
+x = 3
+y = x++
+y += 1
+4
+// y += 1 returned 4 because x++ first of all returned the same value while += performed the action immediately
+
