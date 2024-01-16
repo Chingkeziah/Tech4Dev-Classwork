@@ -1,0 +1,7 @@
+We were given a short break or lets call it holiday for about two weeks or so after which we resumed class.
+This week we were doing a thorough revision of what has already been done in javascript as well as in git.
+We touched stuffs like variables which can be declared using the let, var and const keyword.
+We again looked at functions, arraya and objects. 
+Furthermore, we revised basic command line commands like;touch, mkdir, cd, 
+In addition, we looked at git commands like; git clone, git init, git add, git status, git commit -m "",
+git pull, git push, git branch, git checkout, git fetch, git merge, 
