@@ -88,3 +88,34 @@ window.addEventListener("click", e => {
 })
 
 // focus event
+let help = document.getElementById('help')
+let fields = document.querySelectorAll('input')
+
+for (let field of Array.from(fields)){
+    field.addEventListener('focus', e => {
+        let text = e.target.getAttribute("data-help");
+        help.textContent = text
+    })
+}
+// notice here that when you focus your mouse on any input a display appears to input what exactly the space is for
+
+// Event loop
+// lets you wait till when all other operations(call stack) are done before the call back operation runs.
+// it will execute the main function before the call back function runs.
+setTimeout(() => {
+    console.log('first item')
+})  //call back. A function that can be passed inside another function as an argument
+// it lets you do or carry out another function inside of the main function
+
+console.log('second item')
+
+setTimeout(() => {
+    console.log('Third item')
+}, 0)  //call back
+
+console.log('Fourth item')
+
+// it will log in this order 2,4,1,3
+
+
+// call stack web api, callback, event loop
