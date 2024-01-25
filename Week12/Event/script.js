@@ -119,3 +119,7 @@ console.log('Fourth item')
 
 
 // call stack web api, callback, event loop
+
+
+// protocols
+// GET, POST, PUT, PATCH, DELETE
